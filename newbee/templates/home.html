@@ -1,0 +1,27 @@
+
+{% extends 'base.html'%}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> HOMEPAGE</title>
+    <h1>welcome to homepage!!!!!</h1>
+    <form action="welcome" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="uname" > username </label>
+            <input type="text" name="uname">
+            <label for="pass"> password</label>
+            <input type="password" name ='psw'>
+            <button type="submit">Login</button>
+
+            <a href="password">forget password</a>
+        </div>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
+{% endblock content%}
